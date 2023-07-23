@@ -1,24 +1,35 @@
 import logo from './logo.svg';
-import './App.css';
+import { Button, Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@mui/material';
+import { PhotoCamera } from '@mui/icons-material';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar position='relative'>
+        <Toolbar>
+          <PhotoCamera />
+          <Typography variant='h6'>
+            Photo Album
+          </Typography>
+        </Toolbar>
+      </AppBar>
+
+      <main>
+        <div>
+          <Container maxWidth='sm'>
+            <Typography variant='h2' align='center' color='textPrimary' gutterBottom> Photo Album</Typography>
+            <Typography variant='h5' align='center' color='textSecondary' paragraph>
+              Something short and leading about the collection below—its contents, the creator, etc.
+              Make it short and sweet, but not too short so folks don't simply skip over it entirely.
+            </Typography>
+          </Container>
+        </div>
+      </main>
+
+    </>
   );
 }
 
