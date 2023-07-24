@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import { Button, Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@mui/material';
 import { PhotoCamera } from '@mui/icons-material';
-
+import makeStyles from '@mui/material';
 
 
 const App = () => {
