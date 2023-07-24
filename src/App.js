@@ -25,6 +25,15 @@ const App = () => {
               Something short and leading about the collection below—its contents, the creator, etc.
               Make it short and sweet, but not too short so folks don't simply skip over it entirely.
             </Typography>
+            <Grid container spacing={2} justifyContent={'center'}>
+              <Grid item>
+                <Button variant='contained' color='primary'> See my photo</Button>
+              </Grid>
+              <Grid item>
+                <Button variant='outlined' color='primary'> See my photo</Button>
+              </Grid>
+
+            </Grid>
           </Container>
         </div>
       </main>
